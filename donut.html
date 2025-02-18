@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doughnut Shop</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #a3c47c;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 2rem;
+            color: rgb(195, 96, 96);
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: rgb(245, 246, 247);
+            text-decoration: none;
+            font-weight: italics;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('doughnut-hero.jpg') no-repeat center center/cover;
+            color: rgb(187, 150, 209);
+            text-align: center;
+            padding: 100px 0;  
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+        /* Menu Section */
+        .menu {
+            background-color: #d8c19b;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .menu h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            background-color: rgb(194, 35, 133);
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            width: 280px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+
+        .menu-item p {
+            color: #555;
+        }
+
+        /* About Section */
+        .about {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #97d2a1;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            color: rgb(42, 72, 84);
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: rgb(178, 160, 202);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #60a595;
+        }
+
+        form button {
+            background-color: #a78b6e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #eaefc6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: rgb(174, 207, 158);
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Doughnut Delights</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Fresh & Delicious Doughnuts</h2>
+            <p>Start the day with sweetness and share the sweetness</p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <!-- Corrected Image URL -->
+                    <img src="donut 1.jpg" alt="Chocolate Doughnut">
+                    <h3>Chocolate Doughnut</h3>
+                    <p>Soft and fluffy with a rich chocolate glaze.</p>
+                </div>
+                <div class="menu-item">
+                    <!-- Corrected Image URL -->
+                    <img src="donut 2.jpg" alt="Sprinkle Doughnut">
+                    <h3>Sprinkle Doughnut</h3>
+                    <p>Sweet dough with colorful sprinkles on top.</p>
+                </div>
+                <div class="menu-item">
+                    <!-- Corrected Image URL -->
+                    <img src="https://i.pinimg.com/736x/c9/c2/7a/c9c27a60fb9600d0a45cb892f5dbbdf4.jpg" alt="Glazed Doughnut">
+                    <h3>Glazed Doughnut</h3>
+                    <p>Donut worry, be glazy!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a family-owned bakery passionate about creating delicious, freshly made doughnuts for every occasion. Our doughnuts are made from the finest ingredients and prepared with love!</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Doughnut Delights. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
